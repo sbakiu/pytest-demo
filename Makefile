@@ -3,3 +3,12 @@ python_m:
 
 pytest:
 	pytest tests/
+
+pytest-cov:
+	pytest --cov-report term-missing --cov=src tests
+
+fixtures:
+	pytest --fixtures
+
+capture:
+	pytest --capture=tee-sys
