@@ -12,3 +12,6 @@ fixtures:
 
 capture:
 	pytest --capture=tee-sys
+
+markers:
+	pytest --markers

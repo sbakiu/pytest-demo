@@ -1,16 +1,20 @@
 import os
 
+import pytest
+
 from src.app import one_and_one
 from src.print import print_something
 from src.write_file import write_text_to_file_path
 
 
+@pytest.mark.math
 def test_one_and_one():
     result = one_and_one()
     expected_result = 2
     assert result == expected_result
 
 
+@pytest.mark.notmath
 def test_capture():
     print_something()
 
@@ -45,9 +49,3 @@ def test_file_content(tmp_path):
 
     # assert file content
     assert result == text
-
-#  markers
-
-#  parametrization
-
-#  plugins
