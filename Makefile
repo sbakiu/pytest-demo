@@ -15,3 +15,6 @@ capture:
 
 markers:
 	pytest --markers
+
+math:
+	pytest -m math
