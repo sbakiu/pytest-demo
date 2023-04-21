@@ -46,8 +46,6 @@ def test_file_content(tmp_path):
     # assert file content
     assert result == text
 
-#  magicmock
-
 #  markers
 
 #  parametrization
