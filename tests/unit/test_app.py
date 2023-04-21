@@ -26,8 +26,9 @@ def test_capture_with_fixture(capsys):
 
 
 def test_project_id(project_id):
-    project_id = os.environ["PROJECT_ID"]
-    print(f"project_id is {project_id}.")
+    project_id_value = os.environ["PROJECT_ID"]
+    print(f"project_id_value is {project_id_value}.")
+    assert project_id_value == "test-project"
 
 
 #  tmp_path
